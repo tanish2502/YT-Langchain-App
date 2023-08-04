@@ -1,0 +1,7 @@
+openai
+streamlit
+langchain
+python-dotenv
+#installed these manually
+#pip3 install youtube-transcript-api
+#pip3 install faiss-cpu 

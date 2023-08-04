@@ -1,6 +1,7 @@
 openai
 streamlit
 langchain
+tiktoken
 python-dotenv
 #installed these manually
 #pip3 install youtube-transcript-api

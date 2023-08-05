@@ -1,5 +1,3 @@
-import os
-
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import YoutubeLoader
@@ -30,7 +28,7 @@ def get_response_from_query(db, query, k=4):
     docs = db.similarity_search(query, k=k)
     query_relevant_content = " ".join([d.page_content for d in docs])
 
-    chat = ChatOpenAI(model_name ="gpt-3.5-turbo", temperature=0.9) # type: ignore
+    chat = ChatOpenAI(model_name ="gpt-3.5-turbo", temperature=0.2) # type: ignore
 
     system_template = """
         You are a helpful assistant that that can answer questions about youtube videos 
@@ -57,12 +55,10 @@ def get_response_from_query(db, query, k=4):
 
 st.title('🦜️🔗 Youtube GPT Assistant')
 video_url = st.text_input('Enter Youtube Video URL here: ')
+user_query = st.text_input('Ask your question about the topic from this video here: ')
 
-#video_url = "https://www.youtube.com/watch?v=MiVp4wFlpjQ"
 if video_url:
     data_base = create_db_from_youtube_video(video_url)
-    st.write(data_base)
-
-# query = "What are they saying about AGI and gpt4?"
-# response = get_response_from_query(data_base, query)
-# print(textwrap.fill(response, width=100))
+    query = user_query
+    response = get_response_from_query(data_base, query)
+    st.write(response)

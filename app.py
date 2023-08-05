@@ -53,7 +53,7 @@ def get_response_from_query(db, query, k=4):
     return response
 
 
-st.title('🦜️🔗 Youtube GPT Assistant')
+st.title('🦜️🔗 YT Video Search AI Assistant')
 video_url = st.text_input('Enter Youtube Video URL here: ')
 user_query = st.text_input('Ask your question about the topic from this video here: ')
 

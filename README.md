@@ -14,3 +14,7 @@ YT Video Search AI Assistant is an exciting project that brings together the pow
 * When combined with OpenAI LLM, the assistant becomes capable of providing accurate responses to user queries.
 * Streamlit powers the interactive user interface, making it user-friendly and accessible.
 * Additionally, the Faiss vector database optimizes search performance for quick and efficient results.
+
+<img width="832" alt="Screenshot 2023-08-05 at 6 49 34 PM" src="https://github.com/tanish2502/YT-Langchain-App/assets/100233384/8b6fd98f-b141-4232-b05e-56d514a8901c">
+
+<img width="803" alt="Screenshot 2023-08-05 at 5 02 20 PM" src="https://github.com/tanish2502/YT-Langchain-App/assets/100233384/5d5156d7-f226-4ca7-b775-9b1d04feebcf">
